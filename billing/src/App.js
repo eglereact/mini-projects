@@ -1,14 +1,12 @@
 import Sidebar from "./Components/Sidebar";
 import Billing from "./Components/Billing";
-import Ad from "./Components/Ad";
 
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="flex bg-white shadow-xl rounded-lg w-10/12">
+    <div className="flex min-h-screen items-center justify-center my-6">
+      <div className="flex bg-gray-100 shadow-xl rounded-3xl w-10/12">
         <Sidebar />
-        {/* <Billing />
-        <Ad /> */}
+        <Billing />
       </div>
     </div>
   );
