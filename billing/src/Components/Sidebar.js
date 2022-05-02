@@ -9,9 +9,9 @@ import {
 
 function Sidebar() {
   return (
-    <section className="p-4 bg-gray-100 rounded-l-3xl flex flex-col justify-between">
+    <section className="p-2 lg:p-4 bg-gray-100 rounded-l-3xl flex flex-col justify-between">
       <div>
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-col lg:flex-row items-center space-x-2">
           <img
             src="https://randomuser.me/api/portraits/women/65.jpg"
             alt="Profile"
@@ -37,7 +37,7 @@ function Sidebar() {
               >
                 {link.icon}
               </span>
-              {link.text}
+              <span className="hidden md:inline-flex">{link.text}</span>
             </li>
           ))}
         </ul>
@@ -47,7 +47,7 @@ function Sidebar() {
       transition duration-150 ease-in-out"
       >
         <MdLogout className="text-2xl mr-1" />
-        Sign Out
+        <span className="hidden md:inline-flex"> Sign Out</span>
       </button>
     </section>
   );
