@@ -17,10 +17,10 @@ function Form() {
 
     emailjs
       .sendForm(
-        "service_hvnof0q",
-        "template_bgvcq2h",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "kQNO_TaqDGSUeETu6"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
